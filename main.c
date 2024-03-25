@@ -64,7 +64,7 @@ void render_snake(SDL_Renderer *renderer, int x, int y){
     Snake *track = head;
 
     while (track != NULL){
-        seg.x + track->x * seg_size;
+        seg.x = x + track->x * seg_size; // Corrected line
         seg.y = y + track->y * seg_size;
 
         SDL_RenderFillRect(renderer, &seg);
@@ -91,7 +91,33 @@ void increase_snake(){
 
 }
 
-void move_snake(){
+void move_snake() {
+    // Move the tail to the previous position of the head
+    tail->x = head->x;
+    tail->y = head->y;
+
+    Snake *current = head->next;
+    int prev_x = head->x;
+    int prev_y = head->y;
+
+    while (current != NULL) {
+        // Save the current position
+        int temp_x = current->x;
+        int temp_y = current->y;
+
+        // Move the current segment to the previous position
+        current->x = prev_x;
+        current->y = prev_y;
+
+        // Update the previous position for the next segment
+        prev_x = temp_x;
+        prev_y = temp_y;
+
+        // Move to the next segment
+        current = current->next;
+    }
+
+    // Update the position of the head based on its direction
     switch (head->dir) {
         case SNAKE_UP:
             head->y--;
@@ -106,9 +132,9 @@ void move_snake(){
             head->x++;
             break;
     }
-
     return;
 }
+
 
 void render_grid(SDL_Renderer *renderer, int x, int y)
 {
@@ -135,6 +161,7 @@ void render_grid(SDL_Renderer *renderer, int x, int y)
 int main(int argc, char* argv[]) {
 
     init_snake();
+    increase_snake();
     increase_snake();
 
     SDL_Window *window;
@@ -180,6 +207,26 @@ int main(int argc, char* argv[]) {
                     switch(event.key.keysym.sym){
                         case SDLK_ESCAPE:
                             quit = true;
+                            break;
+                        case SDLK_UP:
+                            if (head->dir != SNAKE_DOWN) {
+                                head->dir = SNAKE_UP;
+                            }
+                            break;
+                        case SDLK_DOWN:
+                            if (head->dir != SNAKE_UP) {
+                                head->dir = SNAKE_DOWN;
+                            }
+                            break;
+                        case SDLK_LEFT:
+                            if (head->dir != SNAKE_RIGHT) {
+                                head->dir = SNAKE_LEFT;
+                            }
+                            break;
+                        case SDLK_RIGHT:
+                            if (head->dir != SNAKE_LEFT) {
+                                head->dir = SNAKE_RIGHT;
+                            }
                             break;
                     }
                     break;
