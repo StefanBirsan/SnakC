@@ -377,7 +377,7 @@ int main(int argc, char* argv[]) {
             WINDOW_WIDTH,
             WINDOW_HEIGHT,
             SDL_WINDOW_BORDERLESS
-            );
+    );
 
     if (!window) {
         fprintf(stderr, "SDL_CreateWindow Error: %s\n", SDL_GetError());
