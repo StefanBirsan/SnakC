@@ -19,6 +19,9 @@
 #define GRID_DIM 1000
 
 int score = 0;
+int delay;
+
+
 
 enum {
     SNAKE_UP,
@@ -391,6 +394,8 @@ int main(int argc, char* argv[]) {
     bool quit = false;
     SDL_Event event;
 
+    const Uint8 *state = SDL_GetKeyboardState(NULL);
+
     while (!quit){
         while (SDL_PollEvent(&event)){
             switch(event.type){
@@ -424,6 +429,9 @@ int main(int argc, char* argv[]) {
                                 head->dir = SNAKE_RIGHT;
                             }
                             break;
+                        case SDLK_SPACE:
+                            delay = 100;
+                            break;
                     }
                     break;
             }
@@ -447,7 +455,13 @@ int main(int argc, char* argv[]) {
 
         SDL_RenderPresent(renderer);
 
-        SDL_Delay(100);
+        if (state[SDL_SCANCODE_SPACE]) {
+            delay = 100;
+        } else {
+            delay = 200;
+        }
+
+        SDL_Delay(delay);
 
     }
 
