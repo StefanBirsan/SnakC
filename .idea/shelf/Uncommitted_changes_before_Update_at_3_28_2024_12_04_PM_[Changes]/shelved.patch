@@ -1,0 +1,18 @@
+Index: cmake-build-debug/.ninja_log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># ninja log v5\r\n6\t1328\t7331910462298383\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1329\t1516\t7331910464051149\tSnakeC.exe\tbde6f7b60a71798e\r\n7\t1405\t7331910588117596\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1406\t1614\t7331910590082961\tSnakeC.exe\tbde6f7b60a71798e\r\n8\t1253\t7331911101481801\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1253\t1460\t7331911103392839\tSnakeC.exe\tbde6f7b60a71798e\r\n6\t1265\t7331911731035467\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1266\t1450\t7331911732811602\tSnakeC.exe\tbde6f7b60a71798e\r\n6\t1202\t7331912263561882\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1203\t1404\t7331912265462932\tSnakeC.exe\tbde6f7b60a71798e\r\n7\t1299\t7331915371311994\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1300\t1518\t7331915373366286\tSnakeC.exe\tbde6f7b60a71798e\r\n7\t1218\t7331916528493101\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1218\t1408\t7331916530306329\tSnakeC.exe\tbde6f7b60a71798e\r\n9\t1625\t7331921929095496\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1627\t1847\t7331921931176261\tSnakeC.exe\tbde6f7b60a71798e\r\n6\t1235\t7331923519811439\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1236\t1498\t7331923522308471\tSnakeC.exe\tbde6f7b60a71798e\r\n5\t1253\t7331924709891115\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1254\t1446\t7331924711709334\tSnakeC.exe\tbde6f7b60a71798e\r\n5\t1230\t7331931245898435\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1231\t1434\t7331931247840901\tSnakeC.exe\tbde6f7b60a71798e\r\n5\t1234\t7331931584906516\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1235\t1428\t7331931586721840\tSnakeC.exe\tbde6f7b60a71798e\r\n7\t1570\t7331932011682276\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1571\t1760\t7331932013458817\tSnakeC.exe\tbde6f7b60a71798e\r\n6\t1338\t7331936813019494\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1338\t1538\t7331936814875066\tSnakeC.exe\tbde6f7b60a71798e\r\n6\t1194\t7331938048059422\tCMakeFiles/SnakeC.dir/main.c.obj\tbfb5f5eb252335cc\r\n1195\t1390\t7331938049900980\tSnakeC.exe\tbde6f7b60a71798e\r\n
+===================================================================
+diff --git a/cmake-build-debug/.ninja_log b/cmake-build-debug/.ninja_log
+--- a/cmake-build-debug/.ninja_log	
++++ b/cmake-build-debug/.ninja_log	
+@@ -29,3 +29,9 @@
+ 1338	1538	7331936814875066	SnakeC.exe	bde6f7b60a71798e
+ 6	1194	7331938048059422	CMakeFiles/SnakeC.dir/main.c.obj	bfb5f5eb252335cc
+ 1195	1390	7331938049900980	SnakeC.exe	bde6f7b60a71798e
++8	1288	7333229366949790	CMakeFiles/SnakeC.dir/main.c.obj	bfb5f5eb252335cc
++1290	1521	7333229369153723	SnakeC.exe	bde6f7b60a71798e
++6	1525	7333231815431819	CMakeFiles/SnakeC.dir/main.c.obj	bfb5f5eb252335cc
++1526	1738	7333231817457318	SnakeC.exe	bde6f7b60a71798e
++9	1892	7333233536245983	CMakeFiles/SnakeC.dir/main.c.obj	bfb5f5eb252335cc
++1893	2148	7333233538696653	SnakeC.exe	bde6f7b60a71798e

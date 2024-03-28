@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_3_28_2024_12_04_PM_[Changes]1" date="1711620270226" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_28_2024_12_04_PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 3/28/2024 12:04 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/.ninja_deps" />
+    <option name="AFTER_PATH" value="cmake-build-debug/.ninja_deps" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_28_2024_12_04_PM_[Changes]1/.ninja_deps" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/SnakeC.dir/main.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/SnakeC.dir/main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_28_2024_12_04_PM_[Changes]1/main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/SnakeC.exe" />
+    <option name="AFTER_PATH" value="cmake-build-debug/SnakeC.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_28_2024_12_04_PM_[Changes]1/SnakeC.exe" />
+  </binary>
+</changelist>
