@@ -1,13 +1,16 @@
-What does the project have until now: 
+## What the Project Has Until Now:
 
--We got a hold of how SDL works 
--We render a grid where in witch the snake should play around
--We rendered the snake
--We managed to make a function to make the snake larger
--We managed to make the snake move
+- We got a hold of how SDL works
+- We render a grid where the snake should play around
+- We rendered the snake
+- We managed to make a function to make the snake larger
+- We managed to make the snake move
+- The snake no longer gets out of the grid
+- We regeneate the snake if we lose and lose our score
+- We have a score and a apple
 
-We have to:
+## To Do:
 
--Make the snake not get out of the grid
--lose if we try to head bumb the snake
--make the apple and maybe score
+- Highscore 
+- Menu
+- Pause
