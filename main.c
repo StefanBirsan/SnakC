@@ -73,7 +73,6 @@ void init_snake(){
     head = new;
     tail = new;
 
-    return;
 }
 
 void render_snake(SDL_Renderer *renderer, int x, int y){
@@ -96,7 +95,6 @@ void render_snake(SDL_Renderer *renderer, int x, int y){
         track = track->next;
     }
 
-    return;
 }
 
 void increase_snake(){
@@ -133,7 +131,6 @@ void increase_snake(){
 
     tail = new;
 
-    return;
 
 }
 
@@ -183,7 +180,7 @@ void move_snake() {
         prev_dir = save_dir;
     }
 
-    return;
+
 }
 
 void reset_snake(){
@@ -204,7 +201,7 @@ void reset_snake(){
 
     score = 0;
 
-    return;
+
 }
 
 
@@ -227,9 +224,6 @@ void render_grid(SDL_Renderer *renderer, int x, int y)
         }
     }
 
-
-
-    return;
 }
 
 void gen_apple(){
@@ -279,7 +273,6 @@ void detect_apple(){
         gen_apple();
         score++;
     }
-    return;
 }
 
 void detect_crash(){
