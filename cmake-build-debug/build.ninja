@@ -56,26 +56,26 @@ build CMakeFiles/SnakeC.dir/main.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/U
   OBJECT_DIR = CMakeFiles\SnakeC.dir
   OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir
 
-build CMakeFiles/SnakeC.dir/snake.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/Users/daria/CLionProjects/SnakeC/snake.c || cmake_object_order_depends_target_SnakeC
-  DEP_FILE = CMakeFiles\SnakeC.dir\snake.c.obj.d
+build CMakeFiles/SnakeC.dir/src/snake.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/Users/daria/CLionProjects/SnakeC/src/snake.c || cmake_object_order_depends_target_SnakeC
+  DEP_FILE = CMakeFiles\SnakeC.dir\src\snake.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   INCLUDES = -IC:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SnakeC.dir
-  OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir
+  OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir\src
 
-build CMakeFiles/SnakeC.dir/apple.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/Users/daria/CLionProjects/SnakeC/apple.c || cmake_object_order_depends_target_SnakeC
-  DEP_FILE = CMakeFiles\SnakeC.dir\apple.c.obj.d
+build CMakeFiles/SnakeC.dir/src/apple.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/Users/daria/CLionProjects/SnakeC/src/apple.c || cmake_object_order_depends_target_SnakeC
+  DEP_FILE = CMakeFiles\SnakeC.dir\src\apple.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   INCLUDES = -IC:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SnakeC.dir
-  OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir
+  OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir\src
 
-build CMakeFiles/SnakeC.dir/render.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/Users/daria/CLionProjects/SnakeC/render.c || cmake_object_order_depends_target_SnakeC
-  DEP_FILE = CMakeFiles\SnakeC.dir\render.c.obj.d
+build CMakeFiles/SnakeC.dir/src/render.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:/Users/daria/CLionProjects/SnakeC/src/render.c || cmake_object_order_depends_target_SnakeC
+  DEP_FILE = CMakeFiles\SnakeC.dir\src\render.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   INCLUDES = -IC:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SnakeC.dir
-  OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir
+  OBJECT_FILE_DIR = CMakeFiles\SnakeC.dir\src
 
 
 # =============================================================================
@@ -85,7 +85,7 @@ build CMakeFiles/SnakeC.dir/render.c.obj: C_COMPILER__SnakeC_unscanned_Debug C$:
 #############################################
 # Link the executable SnakeC.exe
 
-build SnakeC.exe: C_EXECUTABLE_LINKER__SnakeC_Debug CMakeFiles/SnakeC.dir/main.c.obj CMakeFiles/SnakeC.dir/snake.c.obj CMakeFiles/SnakeC.dir/apple.c.obj CMakeFiles/SnakeC.dir/render.c.obj | C$:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/lib/libSDL2main.a C$:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/lib/libSDL2.dll.a
+build SnakeC.exe: C_EXECUTABLE_LINKER__SnakeC_Debug CMakeFiles/SnakeC.dir/main.c.obj CMakeFiles/SnakeC.dir/src/snake.c.obj CMakeFiles/SnakeC.dir/src/apple.c.obj CMakeFiles/SnakeC.dir/src/render.c.obj | C$:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/lib/libSDL2main.a C$:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/lib/libSDL2.dll.a
   FLAGS = -g
   LINK_LIBRARIES = -lmingw32  -mwindows  C:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/lib/libSDL2main.a  C:/Users/daria/Documents/SDLfile/SDL2-2.30.1/x86_64-w64-mingw32/lib/libSDL2.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SnakeC.dir

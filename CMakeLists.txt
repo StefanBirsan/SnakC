@@ -11,11 +11,11 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIR})
 
 add_executable(SnakeC main.c
-        snake.h
-        snake.c
-        apple.h
-        apple.c
-        render.h
-        render.c)
+        headers/snake.h
+        src/snake.c
+        headers/apple.h
+        src/apple.c
+        headers/render.h
+        src/render.c)
 
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY})

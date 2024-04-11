@@ -1,5 +1,5 @@
-#include "apple.h"
-#include "snake.h"
+#include "../headers/apple.h"
+#include "../headers/snake.h"
 
 apple Apple;
 

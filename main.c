@@ -1,6 +1,6 @@
-#include "snake.h"
-#include "apple.h"
-#include "render.h"
+#include "headers/snake.h"
+#include "headers/apple.h"
+#include "headers/render.h"
 
 #if 0
 //almost fullscreen

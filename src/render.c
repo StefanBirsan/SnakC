@@ -1,6 +1,6 @@
-#include "render.h"
-#include "apple.h"
-#include "snake.h"
+#include "../headers/render.h"
+#include "../headers/apple.h"
+#include "../headers/snake.h"
 
 void render_snake(SDL_Renderer *renderer, int x, int y){
 
