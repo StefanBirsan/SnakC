@@ -8,9 +8,11 @@
 - The snake no longer gets out of the grid
 - We regeneate the snake if we lose and lose our score
 - We have a score and a apple
+- Highscore
+- After we crash the game is paused
+- We can now change the snake's collor
 
 ## To Do:
 
-- Highscore 
-- Menu
-- Pause
+- ~~Menu~~ (this feels impossible in SDL)
+

@@ -19,7 +19,10 @@
 #define GRID_DIM 1000
 
 int score = 0;
+int high_score = 0;
 int delay;
+bool direction_set = false;
+SDL_Color snake_color = {0x00, 0xff, 0x00, 255};
 
 
 
@@ -77,7 +80,7 @@ void init_snake(){
 
 void render_snake(SDL_Renderer *renderer, int x, int y){
 
-    SDL_SetRenderDrawColor(renderer, 0x00, 0xff, 0x00, 255);
+    SDL_SetRenderDrawColor(renderer, snake_color.r, snake_color.g, snake_color.b, 255);
     int seg_size = GRID_DIM / GRID_SIZE - 10;
     SDL_Rect seg;
 
@@ -272,6 +275,9 @@ void detect_apple(){
         increase_snake();
         gen_apple();
         score++;
+        if (score > high_score) { // Update high score if necessary
+            high_score = score;
+        }
     }
 }
 
@@ -279,6 +285,7 @@ void detect_crash(){
 
     if (head->x < 0 || head->x >= GRID_SIZE || head->y < 0 || head->y >= GRID_SIZE){
         reset_snake();
+        direction_set = false;
     }
 
     Snake *track = head->next;
@@ -327,6 +334,7 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int size){
     }
 }
 
+
 void render_score(SDL_Renderer *renderer, int x, int y, int size){
     int temp_score = score;
     int digit_count = 0;
@@ -339,6 +347,23 @@ void render_score(SDL_Renderer *renderer, int x, int y, int size){
 
     // Draw each digit
     temp_score = score;
+    for (int i = 0; i < digit_count; i++) {
+        draw_digit(renderer, temp_score % 10, x + (digit_count - i - 1) * size * 4, y, size);
+        temp_score /= 10;
+    }
+}
+
+void render_high_score(SDL_Renderer *renderer, int x, int y, int size){
+    int temp_score = high_score;
+    int digit_count = 0;
+
+
+    do {
+        digit_count++;
+        temp_score /= 10;
+    } while (temp_score > 0);
+
+    temp_score = high_score;
     for (int i = 0; i < digit_count; i++) {
         draw_digit(renderer, temp_score % 10, x + (digit_count - i - 1) * size * 4, y, size);
         temp_score /= 10;
@@ -405,25 +430,35 @@ int main(int argc, char* argv[]) {
                         case SDLK_UP:
                             if (head->dir != SNAKE_DOWN) {
                                 head->dir = SNAKE_UP;
+                                direction_set = true;
                             }
                             break;
                         case SDLK_DOWN:
                             if (head->dir != SNAKE_UP) {
                                 head->dir = SNAKE_DOWN;
+                                direction_set = true;
                             }
                             break;
                         case SDLK_LEFT:
                             if (head->dir != SNAKE_RIGHT) {
                                 head->dir = SNAKE_LEFT;
+                                direction_set = true;
                             }
                             break;
                         case SDLK_RIGHT:
                             if (head->dir != SNAKE_LEFT) {
                                 head->dir = SNAKE_RIGHT;
+                                direction_set = true;
                             }
                             break;
                         case SDLK_SPACE:
                             delay = 100;
+                            break;
+                        case SDLK_f:
+
+                            snake_color.r = rand() % 256;
+                            snake_color.g = rand() % 256;
+                            snake_color.b = rand() % 256;
                             break;
                     }
                     break;
@@ -434,14 +469,17 @@ int main(int argc, char* argv[]) {
         //loop start
 
         //move the snake
-        move_snake();
-        detect_crash();
-        detect_apple();
+        if (direction_set) {
+            move_snake();
+            detect_crash();
+            detect_apple();
+        }
 
         render_grid(renderer, 300, 30);
         render_snake(renderer, 300, 30);
         render_apple(renderer, 300, 10);
-        render_score(renderer, 1300, 30, 20);
+        render_score(renderer, 1250, 30, 20);
+        render_high_score(renderer, 1250, 400, 20);
 
         //loop end
         SDL_SetRenderDrawColor(renderer, 0x11, 0x11, 0x11, 255);
