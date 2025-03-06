@@ -1,18 +1,24 @@
-## What the Project Has Until Now:
+# 🎮 SnakC (SDL) 🐍
 
-- We got a hold of how SDL works
-- We render a grid where the snake should play around
-- We rendered the snake
-- We managed to make a function to make the snake larger
-- We managed to make the snake move
-- The snake no longer gets out of the grid
-- We regeneate the snake if we lose and lose our score
-- We have a score and a apple
-- Highscore
-- After we crash the game is paused
-- We can now change the snake's collor
+## Overview
+This is a **classic Snake game** implemented in **C using the SDL (Simple DirectMedia Layer) library**. The project focuses on mastering SDL fundamentals while creating a fun, interactive and nostalgic game.
 
-## To Do:
+## Current Features
+- **SDL Integration**: Successfully integrated and learned how SDL works.
+- **Grid Rendering**: A structured grid where the snake moves.
+- **Snake Rendering**: The snake is visually represented and animated on the screen.
+- **Snake Growth**: Implemented functionality to increase the snake's size upon eating an apple.
+- **Movement System**: The snake moves in a smooth and controlled manner.
+- **Boundary Handling**: The snake no longer moves outside the grid.
+- **Game Reset on Loss**: When the snake crashes, the game resets, and the score is lost.
+- **Apple & Scoring System**: Apples appear randomly, and eating them increases the score.
+- **High Score Tracking**: Keeps track of the highest score achieved.
+- **Game Over & Pause**: The game pauses upon crashing, allowing the player to restart.
+- **Snake Color Customization**: Players can change the snake's color.
 
-- ~~Menu~~ (this feels impossible in SDL)
-
+## Installation & Usage
+1. Install **SDL2** on your system.
+2. Connect SDL to the your files as installing packages in C tends to be quite difficult.
+3. Change the resolution of the Grid in which the game is running in based on the resolution of your screen.
+4. Compile the game using a C compiler (e.g., `gcc`).
+5. Run the executable and enjoy playing Snake!
